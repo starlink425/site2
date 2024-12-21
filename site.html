@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospedagem Minecraft 24h - Gratuito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #34495e;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: url('https://i.imgur.com/Oc49o2l.jpg') no-repeat center center/cover;
+        }
+        .banner h2 {
+            font-size: 2em;
+            color: #fff;
+        }
+        .plans, .about, .contact {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .plans h2, .about h2, .contact h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .plan {
+            background-color: #34495e;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 250px;
+            border-radius: 10px;
+        }
+        .plan h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .plan p {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            margin-top: 20px;
+        }
+        form input, form textarea, form button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+        form button {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #2980b9;
+        }
+        .manage {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .manage button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .manage button:hover {
+            background-color: #2ecc71;
+        }
+    </style>
+    <script>
+        function createManagementPage() {
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Gerenciamento do Servidor</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #1e1e1e;
+                            color: #fff;
+                            text-align: center;
+                            padding: 20px;
+                        }
+                        h1 {
+                            color: #2ecc71;
+                        }
+                        button {
+                            background-color: #e74c3c;
+                            color: white;
+                            border: none;
+                            padding: 10px 20px;
+                            font-size: 1em;
+                            cursor: pointer;
+                            margin: 10px;
+                        }
+                        button:hover {
+                            background-color: #c0392b;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Gerenciamento do Servidor</h1>
+                    <p>Aqui você pode iniciar, parar ou reiniciar seu servidor.</p>
+                    <button onclick="alert('Servidor iniciado!')">Iniciar Servidor</button>
+                    <button onclick="alert('Servidor parado!')">Parar Servidor</button>
+                    <button onclick="alert('Servidor reiniciado!')">Reiniciar Servidor</button>
+                </body>
+                </html>
+            `);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Hospedagem Minecraft 24h - Grátis</h1>
+    </header>
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#plans">Planos</a>
+        <a href="#about">Sobre Nós</a>
+        <a href="#contact">Contato</a>
+    </nav>
+    <section class="banner" id="home">
+        <h2>Hospede seu servidor de Minecraft de graça, 24 horas por dia!</h2>
+    </section>
+    <section class="plans" id="plans">
+        <h2>Planos de Hospedagem</h2>
+        <div class="plan">
+            <h3>Plano Gratuito</h3>
+            <p>1GB RAM</p>
+            <p>Slot para até 10 jogadores</p>
+            <p>R$0/mês</p>
+        </div>
+        <div class="plan">
+            <h3>Plano Básico</h3>
+            <p>2GB RAM</p>
+            <p>Slot para até 20 jogadores</p>
+            <p>R$25/mês</p>
+        </div>
+        <div class="plan">
+            <h3>Plano Avançado</h3>
+            <p>4GB RAM</p>
+            <p>Slot para até 50 jogadores</p>
+            <p>R$50/mês</p>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>Sobre Nós</h2>
+        <p>Oferecemos hospedagem de servidores Minecraft 100% gratuitos com planos acessíveis para upgrades. Perfeito para você começar!</p>
+    </section>
+    <section class="contact" id="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para suporte ou dúvidas!</p>
+        <form>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <section class="manage">
+        <h2>Gerencie Seu Servidor</h2>
+        <button onclick="createManagementPage()">Acessar Gerenciamento</button>
+    </section>
+    <footer>
+        <p>&copy; 2024 Hospedagem Minecraft 24h. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
